@@ -20,14 +20,7 @@
 
 #ifdef HAVE_ARMCRYPTO
 
-//#ifdef __GNUC__
-//# pragma GCC target("ssse3")
-//# pragma GCC target("aes")
-//# pragma GCC target("pclmul")
-//#endif
-
 #include "sse2neon.h"
-//#include "private/sse2_64_32.h"
 
 #if defined(__INTEL_COMPILER) || defined(_bswap64)
 #elif defined(_MSC_VER)
